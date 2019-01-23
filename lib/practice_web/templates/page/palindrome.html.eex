@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="column">
+    <p><%= link "← go back", to: "/" %></p>
+    <h2>Is <%= @word %> a Palindrome?</h2>
+
+    <%= if @isPalindrome do %>
+      <p>Yes, yes it is.</p>
+    <% else %>
+      <p>No, unfortunately, it is not.</p>
+    <% end %>
+  </div>
+</div>

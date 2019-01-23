@@ -21,4 +21,20 @@ defmodule Practice.Calc do
     # |> reverse to prefix
     # |> evaluate as a stack calculator using pattern matching
   end
+
+  def factor(x) do
+    factor_from(x, 2)
+  end
+
+  defp factor_from(x, start) do
+    cond do
+      start > x -> 
+        []
+      rem(x, start) == 0 -> 
+        [start] ++ factor_from(div(x, start), start)
+      true -> 
+        factor_from(x, start + 1)
+    end
+  end
+
 end
