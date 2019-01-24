@@ -12,8 +12,8 @@ defmodule PracticeWeb.PageController do
   end
 
   def calc(conn, %{"expr" => expr}) do
-    y = Practice.calc(expr)
-    render conn, "calc.html", expr: expr, y: y
+    {status, val} = Practice.calc(expr)
+    render conn, "calc.html", expr: expr, status: status, val: val
   end
 
   def factor(conn, %{"x" => x}) do

@@ -2,8 +2,11 @@
   <div class="column">
     <p><%= link "← go back", to: "/" %></p>
     <h2>Arithmetic Results</h2>
-
-    <p><%= @expr %> = <%= @y %></p>
+    <%= if @status == :ok do %>
+      <p><%= @expr %> = <%= @val %></p>
+    <% else %>
+      <p><%= @expr %> has a syntax error: <b><%= @val %></b></p> 
+    <% end %>
   </div>
 </div>
 

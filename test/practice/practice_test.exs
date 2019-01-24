@@ -18,13 +18,13 @@ defmodule Practice.PracticeTest do
   end
 
   test "evaluate some expressions" do
-    assert calc("5") == 5
-    assert calc("5 + 1") == 6
-    assert calc("5 * 3") == 15
-    assert calc("10 / 2") == 5
-    assert calc("10 - 2") == 8
-    assert calc("5 * 3 + 8") == 23
-    assert calc("8 + 5 * 3") == 23
+    assert calc("5") == {:ok, 5}
+    assert calc("5 + 1") == {:ok, 6}
+    assert calc("5 * 3") == {:ok, 15}
+    assert calc("10 / 2") == {:ok, 5}
+    assert calc("10 - 2") == {:ok, 8}
+    assert calc("5 * 3 + 8") == {:ok, 23}
+    assert calc("8 + 5 * 3") == {:ok, 23}
   end
 
   test "check some words as palindromes" do
