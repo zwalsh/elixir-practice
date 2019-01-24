@@ -1,0 +1,40 @@
+Please fill in answers to the questions below:
+
+
+1. What's your name?
+Zach Walsh
+
+2. What hostname did you deploy to for Task 2?
+hw03.zachwal.sh
+
+3. What's the URL of your git repo for Task 2?
+https://github.com/zwalsh/elixir-practice
+
+4. How much of the functionality did you complete?
+All of it.
+
+5. Did you successfully deploy? If not, what's broken?
+Yes.
+
+6. How comfortable do you feel with Elixir now?
+More comfortable, although the pattern matching is still
+a bit confusing. It's hard to get a feel for what's idiomatic 
+and what the best design is.
+
+7. Which parts of this assignment did you have trouble with, if any?
+I found the calc functionality to be challenging. I ended up
+just converting to postfix and calculating it as postfix. This
+seemed more natural than any prefix algorithm for evaluating the
+expression.
+
+
+
+And here's a list of tasks for grading comments. Just leave this here:
+ - Task 1
+ - Task 2
+ - Task 3
+ - Task 4
+ - Task 5
+ - Task 6
+ - Task 7
+ - Task 8
